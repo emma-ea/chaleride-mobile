@@ -1,6 +1,8 @@
+import 'package:chaleride/core/platform/app_internet_status.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  AppInternetStatus.initialize();
   runApp(const MainApp());
 }
 

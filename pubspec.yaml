@@ -7,8 +7,12 @@ environment:
   sdk: '>=3.0.2 <4.0.0'
 
 dependencies:
+  connectivity_plus: ^5.0.2
+  dio: ^5.8.0+1
   flutter:
     sdk: flutter
+  hive: ^2.2.3
+  logger: ^2.5.0
 
 dev_dependencies:
   flutter_test:
