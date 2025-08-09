@@ -5,6 +5,8 @@ import 'package:chaleride/core/presentation/widget/app_flat_button.dart';
 import 'package:chaleride/core/presentation/widget/app_input_field.dart';
 import 'package:chaleride/core/presentation/widget/app_widget_divider.dart';
 import 'package:chaleride/features/app_tabs/presentation/app_tabs.dart';
+import 'package:chaleride/features/auth/presentation/forgot_password.dart';
+import 'package:chaleride/features/auth/presentation/signup.dart';
 import 'package:chaleride/features/home/presentation/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -39,7 +41,7 @@ class _LoginViewState extends State<LoginView> {
             SizedBox(height: 5.h),
             AppInputField(
               onChanged: (value) {},
-              hintText: 'Email',
+              hintText: 'Email/Phone',
             ),
             SizedBox(height: 1.h),
             AppInputField(
@@ -47,7 +49,7 @@ class _LoginViewState extends State<LoginView> {
               hintText: 'Password',
             ),
             SizedBox(height: 2.h),
-            AppFlatButton(label: 'Forgotten Password ?', action: () {},),
+            AppFlatButton(label: 'Forgotten Password?', action: () {Navigator.push(context, MaterialPageRoute(builder: (ctx) => const ForgottenPasswordView()));},),
             SizedBox(height: 2.h),
             AppButton(label: 'Login', action: () {}),
             SizedBox(height: 2.h),
@@ -55,9 +57,9 @@ class _LoginViewState extends State<LoginView> {
             SizedBox(height: 2.h),
             AppButton(label: 'Sign in with Apple', icon: Icons.apple, action: () {}),
             SizedBox(height: 1.h),
-            AppButton(label: 'Sign in with Google', action: () {}),
+            AppButton(label: 'Sign in with Google', userIcon: AppImages.googleIconSvg, action: () {}),
             SizedBox(height: 2.h),
-            AppFlatButton(label: 'Don\'t have an account ?', action: () {},)
+            AppFlatButton(label: 'Don\'t have an account?', action: () {Navigator.push(context, MaterialPageRoute(builder: (ctx) => const SignupView()));},)
           ],
         ),
       ),

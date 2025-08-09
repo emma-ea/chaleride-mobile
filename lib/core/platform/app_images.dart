@@ -16,4 +16,6 @@ class AppImages {
 
   // app logo
   static String appLogo = 'assets/svg/applogo.svg';
+  static String googleIcon = 'assets/png/google_icon.png';
+  static String googleIconSvg = 'assets/svg/google_icon.svg';
 }
