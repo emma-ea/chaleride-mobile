@@ -11,8 +11,10 @@ dependencies:
   dio: ^5.8.0+1
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.10+1
   hive: ^2.2.3
   logger: ^2.5.0
+  sizer: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -21,3 +23,20 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/svg/
+
+  
+  fonts:
+    - family: 'Montserrat'
+      fonts:
+        - asset: assets/font/montserrat/Montserrat-Light.ttf
+          weight: 200
+        - asset: assets/font/montserrat/Montserrat-Medium.ttf
+          weight: 400
+        - asset: assets/font/montserrat/Montserrat-SemiBold.ttf
+          weight: 500
+        - asset: assets/font/montserrat/Montserrat-Bold.ttf
+          weight: 700
